@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tradingview": {
+      "command": "uv",
+      "args": ["run", "tradingview_mcp/server.py"]
+    }
+  }
+}
