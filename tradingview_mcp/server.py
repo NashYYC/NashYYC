@@ -17,9 +17,9 @@ from __future__ import annotations
 
 import pandas as pd
 import yfinance as yf
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 
-mcp = FastMCP("tradingview")
+mcp = MCPServer("tradingview")
 
 
 def _history(symbol: str, period: str, interval: str) -> pd.DataFrame:

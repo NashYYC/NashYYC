@@ -3,6 +3,16 @@
     "tradingview": {
       "command": "uv",
       "args": ["run", "tradingview_mcp/server.py"]
+    },
+    "ironbeam": {
+      "command": "uv",
+      "args": ["run", "ironbeam_mcp/server.py"],
+      "env": {
+        "IRONBEAM_ENV": "${IRONBEAM_ENV:-demo}",
+        "IRONBEAM_USERNAME": "${IRONBEAM_USERNAME:-}",
+        "IRONBEAM_API_KEY": "${IRONBEAM_API_KEY:-}",
+        "IRONBEAM_PASSWORD": "${IRONBEAM_PASSWORD:-}"
+      }
     }
   }
 }
